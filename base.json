@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Anton",
+        "surname": "Serzhant",
+        "age": 19,
+        "average": 5.85
+    },
+    {
+        "name": "Danik",
+        "surname": "Privalov",
+        "age": 19,
+        "average": 6.35
+    },
+    {
+        "name": "Maksim",
+        "surname": "Verbitskiy",
+        "age": 20,
+        "average": 7.1
+    },
+    {
+        "name": "Egor",
+        "surname": "Grigoriev",
+        "age": 18,
+        "average": 8
+    },
+    {
+        "name": "Boris",
+        "surname": "Lychkovsky",
+        "age": 18,
+        "average": 6.8
+    }]

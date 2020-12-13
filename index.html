@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="studentsApp">
+
+<head>
+</head>
+
+<body ng-controller="studentController">
+    <table>
+        <table>
+            <tr><th>Name</th><th>Surname</th><th>Age</th><th>Average</th></tr>
+          </table>
+        <tr ng-repeat="student in model.students">
+            <td>{{ student.name }}</td>
+            <td>{{ student.surname }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.average }}</td>
+            <td><button ng-click="deleteStudent(student)">Delete</button></td>
+            <td><button ng-click="editStudent(student, newStudent)">Edit</button></td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" ng-model="newStudent.name" /><b> - Name </b> <br />
+        <input type="text" ng-model="newStudent.surname" /><b> - Surame </b> <br />
+        <input type="text" ng-model="newStudent.age" /><b> - Age </b> <br />
+        <input type="text" ng-model="newStudent.average" /><b> - Average </b> <br />
+        <button ng-click="addStudent(newStudent)">Add</button>
+    </form>
+    <br />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="student.js">
+    </script>
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+
+</html>
